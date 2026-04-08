@@ -1,0 +1,6 @@
+@API.AptosMedicos_HostAddress = http://localhost:5133
+
+GET {{API.AptosMedicos_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
