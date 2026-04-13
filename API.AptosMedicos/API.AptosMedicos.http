@@ -3,4 +3,3 @@
 GET {{API.AptosMedicos_HostAddress}}/weatherforecast/
 Accept: application/json
 
-###
