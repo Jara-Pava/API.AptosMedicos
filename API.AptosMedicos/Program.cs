@@ -1,5 +1,8 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Soporte para ejecutarse como Windows Service
+builder.Host.UseWindowsService();
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -19,7 +22,6 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Swagger disponible en producción para pruebas
 app.UseSwagger();
 app.UseSwaggerUI();
 
